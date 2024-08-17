@@ -34,7 +34,6 @@ class Logic(QMainWindow, Ui_MainWindow):
             try:
                 ID = self.ID_input.text().strip()
                 ID = ID.replace(' ', '')
-                assert int(ID)
                 assert len(ID) > 0 and ID.isdigit()
                 assert self.button_cass.isChecked() or self.button_jade.isChecked()
 
